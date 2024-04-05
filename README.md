@@ -165,18 +165,6 @@ subscription.on_ws_closed = lambda { |event|
 }
 ```
 
-### (deprecated) PubNub Subscriptions
-
-```ruby
-events = [
-  '/restapi/v1.0/account/~/extension/~/message-store',
-]
-subscription = PubNub.new(rc, events, lambda { |message|
-  puts message
-})
-subscription.subscribe()
-```
-
 
 For more sample codes, please refer to the [test cases](/spec).
 
